@@ -16,7 +16,9 @@
 <MainNavigator />
 
 <section class="section">
+  <div class="box country-box">
   <ListCountry bind:this={listCountryComponent}/>
   <AddCountry on:message={countryAdded}/>
+</div>
 </section>
 

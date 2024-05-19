@@ -1,0 +1,74 @@
+/* .login-main-background{
+    background-color: brown;
+} */
+
+.login-main-background{
+    background-color: brown;
+    height: 100vh;
+}
+.navbar{    
+    background-color: transparent;
+}
+
+.welcome-background {
+    background-image: url("./images/background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100%;
+    min-height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+}
+.is-colored {
+    background-color: antiquewhite; 
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+    justify-content: space-between;
+
+}
+
+
+.navbar {
+ background-color: transparent;
+}
+
+.un-padding{
+    padding: 0;
+}
+.colored-btn{
+    background-color: antiquewhite;
+    border-color: antiquewhite !important;
+    text-decoration: none;
+}
+.button{
+    border-color: white;
+    text-decoration: none;
+}
+.custom-box{
+    width: 50%;
+    margin: auto;
+}
+.country-box{
+    background-color: antiquewhite;
+}
+.colored-background{
+    background-color: antiquewhite;
+}
+.flex-centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-width{
+    width: 80%;
+}
+.unesco-title{
+    color: antiquewhite;
+}
+.add-country{
+    padding-bottom: 10px;
+}

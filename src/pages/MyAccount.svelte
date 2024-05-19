@@ -31,10 +31,10 @@
 </script>
 
 <MainNavigator/>
-<section class="section">
+<section class="section box">
 <form on:submit|preventDefault={updateUserDetails}>
   <h1 class="title">Your Account Details</h1>
-  <h3 class = "subtitle">Update Your Details</h3>
+  <!-- <h3 class = "subtitle">Update Your Details</h3> -->
   <div class="field is-horizontal">
     <div class="field-body">
       <div class="field">
@@ -56,14 +56,14 @@
         <input class="input" type="password" name="password" placeholder="Enter new password">
       </div>
       <div class="field">
-        <button class="button">Submit</button>
+        <button class="button colored-btn">Submit</button>
       </div>
 </form>
-    <div>
+    <!-- <div>
       <h2> Delete Your Account</h2>
       <button on:click={deleteUser} class="button">
       <span class="icon-is-small">
       <i class="fas fa-trash"></i>
       </span>
-    </div>
+    </div> -->
 </section>

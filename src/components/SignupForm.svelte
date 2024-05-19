@@ -22,6 +22,7 @@ async function signup() {
 </script>
 
 <section class="section">
+    <div class='box custom-box'>
     <form on:submit|preventDefault={signup}>
         <div class="field is-horizontal">
             <div class="field-body">
@@ -44,9 +45,10 @@ async function signup() {
             <input bind:value={password} id="password" class="input" type="password" placeholder="Enter password" name="password">
         </div>
         <div class="field is-grouped">
-            <button class="button is-warning">Sign Up</button>
+            <button class="button colored-btn">Sign Up</button>
         </div>
     </form>
+</div>
 </section>
 {#if errorMessage}
   <div class="section">

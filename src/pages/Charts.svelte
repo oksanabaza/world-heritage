@@ -15,7 +15,7 @@
   };
 
     let categoryData = {
-        labels: ['Class', 'Festival', 'Other', 'Shop', 'Exhibition', 'Knit Night' ],
+        labels: ['Europe', 'Asia', 'Other', 'Africa', 'North America', 'South America' ],
         datasets: [
             {
                 values: [0, 0, 0, 0, 0, 0]

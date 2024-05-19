@@ -18,7 +18,7 @@
         }
     }
 </script>
-
+<div class='box custom-box'>
 <form on:submit|preventDefault={login}>
     <section class="section">
         <h1 class="title">Log in</h1>
@@ -31,10 +31,11 @@
                 <input bind:value={password} class="input" id="password" type="password" placeholder="Enter Password" name="password">
             </div>
             <div class="field is-grouped">
-                <button class="button">Log In</button>
+                <button class="button colored-btn">Log In</button>
             </div>   
     </section>
 </form>
+</div>
 {#if errorMessage}
   <div class="section">
     {errorMessage}

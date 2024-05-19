@@ -77,6 +77,15 @@ export class CountryspotService {
       return false;
     }
   }
+  async getCountryById(countryid) {
+    try {
+      const response = await axios.get(this.baseUrl + "/api/countries/" + countryid);
+      return response.data;
+    } catch (error) {
+      console.error("Error getting country by id:", error);
+      return {};
+    }
+  }
 
   async getAllCountries() {
     try {
