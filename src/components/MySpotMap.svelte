@@ -33,6 +33,6 @@
 
 </script>
 
-<label for="title" class="label"> View the location of your Spots for this country </label>
+
 <div class="box" id="countryspot-map" style="height:800px">
 </div>

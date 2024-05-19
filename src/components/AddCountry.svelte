@@ -20,11 +20,11 @@
 </script>
 
 <form on:submit|preventDefault={addCountry}>
-    <div class="">
+    <div class="add-country">
       <label for="title" class="label">Country Name</label>
       <input bind:value={title} id="title" class="input" type="text" placeholder="Enter country name" name="title" />
     </div>
-    <button class="button is-link">Add Country</button>
+    <button class="button">Add Country</button>
 </form>
 {#if errorMessage}
   <div class="section">

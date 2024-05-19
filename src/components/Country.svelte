@@ -14,7 +14,7 @@
     }
 </script>
 
-<div class="box box-link-hover-shadow">
+<div class="box box-link-hover-shadow ">
     <h2 class="title">
       {title}
     </h2>

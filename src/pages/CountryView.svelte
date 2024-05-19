@@ -20,15 +20,16 @@
 </script>
 
 <MainNavigator/>
-<section class="section columns is vcentered box">
-    <div class="column has-text-centered">
+<section class="section columns is vcentered box colored-background">
+    <div class="column has-text-centered flex-centered">
       <div class="title">
-        Your Spot List
+        {params.id} heritage
       </div>
       <ListSpots on:message={updateList} bind:this={listSpotComponent} countryId={params.id} />
       <AddSpot on:message={spotAdded} countryId={params.id} />
     </div>
 </section>
-  <div class="title"> Spot Map
+  <div class="title"> 
     <MySpotMap on:message={spotAdded} bind:this={spotMap} countryId={params.id}/>
   </div>
+  

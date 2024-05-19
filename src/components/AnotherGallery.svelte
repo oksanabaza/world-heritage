@@ -18,8 +18,8 @@
 </script>
 
 <MainNavigator/>
-<div class="box box-link-hover-shadow" id="" style="height:800px">
-    <div class="title">UNESCO Gallery</div>
+<div class="box box-link-hover-shadow colored-background" id="" style="height:800px">
+    <div class="title">UNESCO Gallery Worldwide</div>
         <Gallery gap="10" maxColumnWidth="200">
             {#each allImages as image }
                 <img src={image.img} alt="">

@@ -40,7 +40,7 @@
 }
 .colored-btn{
     background-color: antiquewhite;
-    border-color: antiquewhite;
+    border-color: antiquewhite !important;
     text-decoration: none;
 }
 .button{
@@ -53,4 +53,22 @@
 }
 .country-box{
     background-color: antiquewhite;
+}
+.colored-background{
+    background-color: antiquewhite;
+}
+.flex-centered{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-width{
+    width: 80%;
+}
+.unesco-title{
+    color: antiquewhite;
+}
+.add-country{
+    padding-bottom: 10px;
 }

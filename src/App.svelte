@@ -16,8 +16,9 @@
   import PhotoGallery from "./pages/PhotoGallery.svelte";
 
 
-  // setContext("CountryspotService", new CountryspotService("https://limitless-cliffs-75212.herokuapp.com"));
- setContext("CountryspotService", new CountryspotService("http://localhost:4000"));
+  setContext("CountryspotService", new CountryspotService("https://placemark-br40.onrender.com"));
+  // 54.145.22.183
+//  setContext("CountryspotService", new CountryspotService("http://localhost:4000"));
   
 
   let routes = {

@@ -1,3 +1,3 @@
 <div class="title p-3 is-flex">
-    <div class="ml-4">Unesco </div>
+    <div class="ml-4 unesco-title">UNESCO </div>
 </div>

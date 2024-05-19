@@ -23,7 +23,7 @@
 
 </script>
 <section class="section">
-    <h1 class="title">User List</h1>
+    <!-- <h1 class="title">User List</h1> -->
     <div class="box box-link-hover-shadow">
       <table class="table is-fullwidth is-striped">
         <thead>
@@ -48,7 +48,7 @@
               {user.email}
             </td>
             <td>
-              {user.permission}
+              {user.permission ? user.permission :"non-admin"}
             </td>
             <td>
               <button on:click={() => { deleteUser(user._id) }} class="button">

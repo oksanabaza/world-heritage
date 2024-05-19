@@ -26,11 +26,11 @@
 </script>
 
 <MainNavigator />
-
-<form on:submit|preventDefault={updateSpot}>
+<div class="form-container">
+<form on:submit|preventDefault={updateSpot} class='box'>
         <label for="title" class="label">Enter Updated Spot Details:</label>
-        <div class="field is-horizontal">
-          <div class="field-body">
+        <div class="field is-vertical">
+          <div class="">
             <div class="field">
               <label for="placeName" class="label">Place Name</label>
               <input bind:value={spot.placeName} class="input" type="text" name="placeName" />
@@ -55,11 +55,11 @@
                 <div class="select is primary">
                   <select name="category" id="category">
                     <option>Choose Category</option>
-                    <option value="Shop">Shop</option>
-                    <option value="Class" selected>Class</option>
-                    <option value="Exhibition">Exhibition</option>
-                    <option value="Knitnight">Knit Night</option>
-                    <option value="Festival">Festival</option>
+                    <option value="Europe">Europe</option>
+                    <option value="Asia">Asia</option>
+                    <option value="Africa">Africa</option>
+                    <option value="North America">North America</option>
+                    <option value="South America">South America</option>
                     <option value="Other">Other</option>
                   </select>
                 </div>
@@ -69,3 +69,4 @@
         </div>
         <button class="button is-link">Update Spot</button>
       </form>
+      </div>
