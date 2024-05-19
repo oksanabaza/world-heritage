@@ -1,0 +1,29 @@
+/* .login-main-background{
+    background-color: brown;
+} */
+
+.login-main-background{
+    background-color: brown;
+    height: 100vh;
+}
+.navbar{    
+    background-color: transparent;
+}
+
+.welcome-background {
+    background-image: url("./images/background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    width: 100%;
+    height: 100vh; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+}
+.is-colored {
+    background-color: antiquewhite; /* Replace 'yourcolor' with the desired color */
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
+}
