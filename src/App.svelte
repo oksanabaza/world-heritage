@@ -15,6 +15,7 @@
   import SpotView from "./pages/SpotView.svelte";
   import PhotoGallery from "./pages/PhotoGallery.svelte";
 
+
   // setContext("CountryspotService", new CountryspotService("https://limitless-cliffs-75212.herokuapp.com"));
  setContext("CountryspotService", new CountryspotService("http://localhost:4000"));
   
@@ -36,11 +37,10 @@
   "/photogallery": PhotoGallery,
 
 }
-
 </script>
 
-
-<div class="container">
-
-  <Router {routes}/>
+<div class='welcome-background'>
+  <div class="container">
+    <Router {routes}/>
+  </div>
 </div>

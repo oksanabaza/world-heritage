@@ -72,14 +72,14 @@
     {#if shouldShow}
         <div class="columns is-centered is-vcentered">
             <div class="column is-half">
-                <div class="box un-padding" style="height: 50%;">
-                    <div class="test columns is-vcentered buttons">
+                <div class="un-padding box" >
+                    <div class=" columns is-vcentered ">
                         <div class="column has-text-centered">
                             <h1 style="font-size: 2rem;">Login</h1> 
                             <div style="padding:40px">
                                 Use your email and password to login into your account
                             </div>
-                            <a class="button is-medium" id="login" href="/#/login">Log In</a>
+                            <a class="button is-medium colored-btn" id="login" href="/#/login">Log In</a>
                         </div>
                         <div class="column has-text-centered is-colored">
                             <h1 style="font-size: 2rem;">Hi there!</h1> 

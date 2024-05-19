@@ -20,7 +20,7 @@
 </script>
 
 <MainNavigator/>
-<section class="section columns is vcentered">
+<section class="section columns is vcentered box">
     <div class="column has-text-centered">
       <div class="title">
         Your Spot List
