@@ -14,3 +14,11 @@ countryspotService.logout();
         <WelcomeNavigator/>
     </div>   
 </div>
+<div class="columns is-vcentered ">
+    <figure class="image">
+        <img src="" alt="country supplies">
+    </figure>
+    <div class="column is-right">
+        <h1 class="title has-text-right">Please sign up or log in...</h1>
+    </div>
+</div>
