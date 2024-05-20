@@ -23,7 +23,7 @@
 <section class="section columns is vcentered box colored-background">
     <div class="column has-text-centered flex-centered">
       <div class="title">
-        {params.id} heritage
+        Country heritage
       </div>
       <ListSpots on:message={updateList} bind:this={listSpotComponent} countryId={params.id} />
       <AddSpot on:message={spotAdded} countryId={params.id} />
