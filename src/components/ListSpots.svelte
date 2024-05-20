@@ -61,6 +61,13 @@ async function deleteSpot(spotid) {
             <i class="fas fa-map-pin"></i>
           </a>
         </p>
+        <p class="card-footer-item">
+        <a href="#/spot/{spot._id}" class="button">
+          <span class="icon is-small">
+            <i class="fas fa-folder-open"></i>
+          </span>
+          </a>
+        </p>
       </footer>
     </div>
   </div>

@@ -16,7 +16,6 @@
 <section class="section">
     <div class="container">
         <h1 class="title">Photo Gallery</h1>
-        <h2 class="subtitle">Upload & View Photos of Your Spot Here</h2>
             <div class="container 	" >
                 <div class="columns is-inline-flex is-flex-direction-row is-flex-wrap-wrap">
                         {#each images as image}
@@ -30,7 +29,6 @@
 </section>
 <section>
        <div class="column">
-        <h3 >Choose an image to upload, then click submit.</h3>
             <SpotImage spotid={spotid} on:message={refresh}/>
         </div>
 </section>

@@ -1,6 +1,8 @@
 import axios from "axios";
 import { user } from "../stores.js";
 import sanitizeHtml from "sanitize-html";
+import { getWeather } from './WeatherService.js'; 
+
 
 export class CountryspotService {
   baseUrl = "";
@@ -77,15 +79,6 @@ export class CountryspotService {
       return false;
     }
   }
-  async getCountryById(countryid) {
-    try {
-      const response = await axios.get(this.baseUrl + "/api/countries/" + countryid);
-      return response.data;
-    } catch (error) {
-      console.error("Error getting country by id:", error);
-      return {};
-    }
-  }
 
   async getAllCountries() {
     try {
@@ -143,6 +136,16 @@ export class CountryspotService {
       return {};
     }
   }
+  async getSpotWeatherById(lat,lon) {
+    try {
+      const weather = await getWeather(lat, lon);
+      return weather;
+    } catch (error) {
+      return {};
+    }
+  }
+ 
+
 
   async updateSpot(countryid, spotid, spot) {
     try {
