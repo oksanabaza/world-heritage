@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
     import { onMount, getContext } from "svelte";
     import MainNavigator from "../components/MainNavigator.svelte";
     import SpotGallery from "../components/SpotGallery.svelte";
@@ -18,6 +18,7 @@
 </script>
 
 <MainNavigator/>
+<div class='box colored-background'>
 <section class="section columns is-vcentered">
     <div class="column ">
         <div class="title">{spot.placeName}</div>
@@ -57,6 +58,88 @@
 </section>
 
 <SpotGallery spotid={spot._id} images={spot.images} on:message={refreshSpot}/>
+</div>
 
+ -->
+ <script>
+  import { onMount, getContext } from "svelte";
+  import MainNavigator from "../components/MainNavigator.svelte";
+  import SpotGallery from "../components/SpotGallery.svelte";
+  import axios from "axios";
 
+  let spot = {};
+  let weather = {}; // Initialize weather object
+
+  export let params;
+  const countryspotService = getContext("CountryspotService");
+
+  onMount(async () => {
+    spot = await countryspotService.getSpotById(params.spotid);
+
+    try {
+      const response = await axios.get(`/api/weather?lat=${spot.lat}&lon=${spot.lng}`);
+      weather = response.data;
+      console.log(weather,'weather')
+    } catch (error) {
+      console.error("Error fetching weather data:", error.message);
+      // Handle error here
+    }
+  });
+
+  async function refreshSpot() {
+    spot = await countryspotService.getSpotById(params.spotid);
+  }
+</script>
+
+<MainNavigator />
+<div class='box colored-background'>
+  <section class="section columns is-vcentered">
+    <div class="column">
+      <div class="title">{spot.placeName}</div>
+      <div class="box">
+        <table class="table is-fullwidth is-striped">
+          <thead>
+            <tr>
+              <th>Place Name</th>
+              <th>Latitude</th>
+              <th>Longitude</th>
+              <th>Description</th>
+              <th>Category</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{spot.placeName}</td>
+              <td>{spot.lat}</td>
+              <td>{spot.lng}</td>
+              <td>{spot.description}</td>
+              <td>{spot.category}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Display weather information if available -->
+  {#if weather.current}
+    <section class="section">
+      <h2 class="title">Weather Information</h2>
+      <div class="box">
+        <p>Current Temperature: {weather.current.temp}°C</p>
+        <p>Weather Condition: {weather.current.weather[0].description}</p>
+      </div>
+    </section>
+  {:else}
+    <!-- Display error or loading message if weather data is not available -->
+    <section class="section">
+      <div class="notification is-warning">
+        Weather information is not available.
+      </div>
+    </section>
+  {/if}
+
+  <!-- Pass spot._id and spot.images directly -->
+  <SpotGallery spotid={spot._id} images={spot.images} on:message={refreshSpot} />
+</div>
 

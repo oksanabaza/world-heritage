@@ -31,6 +31,7 @@
         <label for="title" class="label">Enter Updated Spot Details:</label>
         <div class="field is-vertical">
           <div class="">
+       
             <div class="field">
               <label for="placeName" class="label">Place Name</label>
               <input bind:value={spot.placeName} class="input" type="text" name="placeName" />
